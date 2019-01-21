@@ -10,7 +10,7 @@
 6. Test and debug the program
 7. Maintain and modify the program
 
-**Executable File : ** It contains ready-to-run machine language code.
+**Executable File :** It contains ready-to-run machine language code.
 
 ### Compiling and linking
 The compiler converts your source code to an intermediate code, and the linker combines this with other code to produce the executable file.
@@ -20,3 +20,17 @@ C uses this two-part approach to facilitate the modularisation of programs. You 
 The role of the linker is to bring together these three elements—your object code, the standard startup code for your system, and the library code—and put them together into a single file, the executable file.
 
 ![code flow](./assets/compile-flow.jpg)
+
+In short, an object file and an executable file both consist of machine language instructions. However, the object file contains the machine language translation only for the code you used, but the executable file also has machine code for the library routines you use and for the startup code.
+
+### Compiling a program
+`gcc test-code.c`
+
+This will generate one new file called a.out. This is the executable file containing the translation of the program.
+
+To run the program `./a.out`
+
+![code-flow](./assets/code-flow.jpg)
+
+
+###
